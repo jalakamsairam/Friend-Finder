@@ -27,9 +27,9 @@ app.use(bodyParser.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-var apiRoutes = require("./routing/apiRoutes.js")(app);
+var apiRoutes = require("./app/routing/apiRoutes.js")(app);
 
-var htmlRoutes = require("./routing/htmlRoutes.js")(app);
+var htmlRoutes = require("./app/routing/htmlRoutes.js")(app);
 
 app.listen(PORT,function(){
     console.log("App is listening on port"+PORT);
